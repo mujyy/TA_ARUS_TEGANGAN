@@ -104,7 +104,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <canvas id="grafik"></canvas>
+                                        <canvas id="grafik_tegangan"></canvas>
                                     </div>
                                 </div>
 
@@ -112,6 +112,26 @@
                         </div>
                         
                     </div>
+                    <div class="row">
+
+                        <!-- Area Chart Tegangan -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pengukuran Arus</h6>
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="grafik_arus"></canvas>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                      <div class="row">
 
                     <!-- Content Row -->
@@ -200,7 +220,8 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.php"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-area-demo-arus.php"></script>
+    
 
 </body>
 
