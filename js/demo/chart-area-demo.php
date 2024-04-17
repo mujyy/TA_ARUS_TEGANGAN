@@ -1,14 +1,11 @@
 <?php
-$koneski  = mysqli_connect("localhost", "root", "iot_taku");
+$koneski  = mysqli_connect("localhost", "root", "", "iot_taku");
 $tegangan = mysqli_query($koneski, "SELECT tegangan FROM hasil order by id asc");
 $arus     = mysqli_query($koneski, "SELECT arus FROM hasil order by id asc");
 $jam      = mysqli_query($koneski, "SELECT jam FROM hasil order by id asc");
 ?>
 
 
-// Set new default font family and font color to mimic Bootstrap's default styling
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
 
 function number_format(number, decimals, dec_point, thousands_sep) {
   // *     example: number_format(1234.56, 2, ',', ' ');
@@ -54,11 +51,10 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-    datasets: [{
       data: [<?php while ($p = mysqli_fetch_array($tegangan)) {echo '"' . $p['tegangan'] . '",';}?>],
-    }],
+    }]
   },
-  options: {
+  options : {
     maintainAspectRatio: false,
     layout: {
       padding: {
@@ -124,4 +120,4 @@ var myLineChart = new Chart(ctx, {
       }
     }
   }
-}});
+});

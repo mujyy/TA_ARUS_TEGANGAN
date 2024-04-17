@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
 
     <title>Tugas Akhir  - Dashboard</title>
 
@@ -19,7 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    
 </head>
 
 <body id="page-top">
@@ -193,6 +194,9 @@
 
     <!-- Page level plugins -->
     <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
+
+     <!-- script chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.php"></script>
