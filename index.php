@@ -221,6 +221,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.php"></script>
     <script src="js/demo/chart-area-demo-arus.php"></script>
+
     
 
 </body>

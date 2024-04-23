@@ -1,8 +1,8 @@
 <?php
-$koneski  = mysqli_connect("localhost", "root", "", "iot_taku");
-$tegangan = mysqli_query($koneski, "SELECT tegangan FROM hasil order by id asc");
-$arus     = mysqli_query($koneski, "SELECT arus FROM hasil order by id asc");
-$jam      = mysqli_query($koneski, "SELECT jam FROM hasil order by id asc");
+$koneski  = mysqli_connect("localhost", "root", "", "monitoringdaya");
+$tegangan = mysqli_query($koneski, "SELECT tegangan FROM sensor order by id asc");
+$arus     = mysqli_query($koneski, "SELECT arus FROM sensor order by id asc");
+$waktu     = mysqli_query($koneski, "SELECT waktu FROM sensor order by id asc");
 ?>
 
 
@@ -37,7 +37,7 @@ var ctx = document.getElementById("grafik_tegangan");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: [<?php while ($p = mysqli_fetch_array($jam)) {echo '"' . $p['jam'] . '",';}?>],
+    labels: [<?php while ($p = mysqli_fetch_array($waktu)) {echo '"' . $p['waktu'] . '",';}?>],
     datasets: [{
       label: "Earnings",
       lineTension: 0.3,
