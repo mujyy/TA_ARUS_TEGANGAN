@@ -147,8 +147,9 @@
                                 </div>
                                 <div class="card-body">
                                     <p>Tugas Akhir saya ini adalah SOLAR PANEL SINGEL AXIST </p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
+                                    <p class="mb-0">pada penelitian ini akan dirancang dan dibangun sebuah prototype atau purwarupa sistem pelacak matahari (solar tracker) untuk panel surya. Purwarupa ini akan memiliki mekanisme untuk menggerakkan dan memutar panel  
+                                    surya secara otomatis mengikuti pergerakan matahari dari timur ke barat sepanjang hari.
+                                    </p>
                                 </div>
                             </div>
 
@@ -165,7 +166,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Firdaus Website 2024</span>
                     </div>
                 </div>
             </footer>
